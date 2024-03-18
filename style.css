@@ -1,0 +1,41 @@
+* {
+    
+}
+body{
+    width: 60%;
+    height: 100vh; 
+    border: 2px solid chocolate;
+    background-image: url(images/background-image);
+}
+
+.header {
+    background-color: blanchedalmond;
+    font-family:Tahoma;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.nav {
+    background-color:blanchedalmond; 
+    text-align:center;
+    
+}
+
+.nav a {
+    color:black;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+.nav a:hover{
+color:red;
+}
+.footer {
+    background-color:blanchedalmond;
+    color: black;
+    text-align:center;
+    font-family:calibri;
+    font-size: 20px;
+}            
