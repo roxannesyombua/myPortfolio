@@ -1,41 +1,92 @@
-* {
-    
-}
-body{
-    width: 60%;
-    height: 100vh; 
-    border: 2px solid chocolate;
-    background-image: url(images/background-image);
+* {}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-image: url(Assets/images/Background\ image.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
-    background-color: blanchedalmond;
-    font-family:Tahoma;
+    font-style: italic;
+    color: blanchedalmond;
     display: flexbox;
     justify-content: center;
     text-align: center;
 
 }
 
+.header h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
 .nav {
-    background-color:blanchedalmond; 
-    text-align:center;
-    
+    font-size: 1em;
+    text-align: center;
+    transition: 0.5s;
 }
 
 .nav a {
-    color:black;
+    position: relative;
+    color: whitesmoke;
     justify-content: space-between;
     text-decoration: none;
     padding: 10px 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border-bottom: 2px solid pink;
+    cursor: pointer;
+    
+}
+.nav span{
+    content:"";
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 25px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+a:hover span {
+    width: 100%;
+    border-radius: 25px;
+    z-index: -1;
 }
 .nav a:hover{
-color:red;
+    border: none;
+    color: rgb(0, 0, 0);
 }
-.footer {
-    background-color:blanchedalmond;
+.picture{
+    width: 80px;
+    height:80px; 
+    border-radius: 100%;
+}
+.about {
+font-family: calibri;
+color: pink;
+}
+.project {
+    font-family: calibri;
+    color: pink;
+}
+.project a{
+    color: white;
+}
+.contact-me{
+    font-family: calibri;
+    color: pink; 
+}
+.footer p {
+    background-color: pink;
     color: black;
-    text-align:center;
-    font-family:calibri;
+    text-align: center;
+    font-family: calibri;
     font-size: 20px;
-}            
+    font-style: italic;
+}
